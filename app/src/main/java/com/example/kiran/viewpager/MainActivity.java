@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if(v.getId()==R.id.button) {
             Intent intent=new Intent(this,Main2Activity.class);
             String message=editText.getText().toString();
+            Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
             intent.putExtra("message", message);
             startActivity(intent);
         }
