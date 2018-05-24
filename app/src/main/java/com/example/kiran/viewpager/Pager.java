@@ -39,7 +39,7 @@ public class Pager extends PagerAdapter {
         layoutInflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.page,container,false);
         tv=view.findViewById(R.id.textView);
-        tv.setText(" This is page  "+(position+1));
+        tv.setText("This is page  "+(position+1));
         container.addView(view);
         return view;
     }
